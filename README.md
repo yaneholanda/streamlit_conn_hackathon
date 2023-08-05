@@ -1,6 +1,6 @@
 # Streamlit Connections Hackaton 🎈
 ## Poké API ⚡
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pokebase.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pokemonapp.streamlit.app)
 
 Welcome to the Pokémon search and information app! With this app, you can easily find information about your favorite Pokémon, including their stats, evolutions, and more. This app is designed to be fast and easy to use, so you can quickly find the information you need.
 
