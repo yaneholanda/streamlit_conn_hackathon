@@ -9,8 +9,9 @@ With PokeConnection you can retrieve Pokémon data from the Poké API:
 ```python
 import streamlit as st
 conn = st.experimental_connection("poke", type=PokeConnection)
+pokemon_name = "charmander"
 pokemon = conn.query("pokemon", name=pokemon_name)
-st.write("Name:", pokemon['name']
+st.write("Abilities:", ', '.join(pokemon['abilities']))
 ```
 Feel free to fork this repository and add new features! 
 
