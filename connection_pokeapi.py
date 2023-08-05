@@ -37,11 +37,13 @@ class PokeConnection(st.connections.ExperimentalBaseConnection):
         """
         pass
 
-    def query(self, **kwargs):
+    def query(self, connection_name, name):
         """
         Queries the Poké API for the pokemon matching the query.
         """
-        @st.cache(key=kwargs.get("name"),ttl=600)
-        def _get_pokemon_data():
-            return _get_pokemon_data(kwargs.get("name"))
+        @st.cache_data(ttl=600)
+        def _get_pokemon_data_cached(name):
+            return _get_pokemon_data(name)
+
+        return _get_pokemon_data_cached(name)
 
